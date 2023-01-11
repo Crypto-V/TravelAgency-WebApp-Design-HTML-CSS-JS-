@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="popupStyle.css">
+    <title>SpecialOffers</title>
+  </head>
+
+  <body>
+    <div class="tBanner">
+      <img id="tLogo" src="data\images\logo.png" alt="logo" />
+      <p id="tSlogan">adventure starts here...</p>
+
+      <div class="searchbar">
+        <input id="placeholder" placeholder="-Destinations-" />
+        <button type="submit" class="search"><a href="404Page.html">Search</a></button>
+      </div>
+
+      <div class="contacts">
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534642921</p>
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534645121</p>
+        <img id="flag" src="data\images\ukFlag.png" alt="britishFlag" />
+        <a href="SignUpForm.html">Register</a>
+        <span class="spanTop">/</span>
+        <a style="cursor: pointer;text-decoration: underline;" data-modal-target="#modal">Sign In</a>
+      </div>
+    </div>
+
+    <nav id="navigate">
+      <ul class="uList">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="SpecialOffers.html">Special Offers</a></li>
+        <li><a class="active" href="404Page.html">Hotel Rooms</a></li>
+        <li><a class="active" href="404Page.html">Transfer</a></li>
+        <li><a class="active" href="404Page.html">Fly Tickets</a></li>
+        <li><a class="active" href="404Page.html">Cruises</a></li>
+        <li><a class="active" href="404Page.html">Local Trips</a></li>
+        <a href="#404Page"
+          ><img id="navigation" src="data/images/location.png" alt="gps"
+        /></a>
+      </ul>
+    </nav>
+
+    <div class="special-offers-main">
+      <!-- Body filter section -->
+      <div class="special-offer1">
+        <div class="filterBlock">
+          <div class="filterHeading">
+            <p>Filter by country</p>
+            <a class="accordion-link" href="#special-offer1">
+              <p class="minus" onclick="collapse(0)">🔼</p>
+              <p class="plus" onclick="extend(0)">🔽</p>
+            </a>
+          </div>
+
+          <div class="contentFilter">
+            <hr />
+            <input
+              type="checkbox"
+              id="option1"
+              name="option1"
+              value="bulgaria"
+            />
+            <label for="option1"> Bulgaria(123)</label><br />
+            <input type="checkbox" id="option2" name="option2" value="grece" />
+            <label for="option2"> Grece(59)</label><br />
+            <input type="checkbox" id="option3" name="option3" value="turkey" />
+            <label for="option3"> Turkey(121)</label><br />
+            <input type="checkbox" id="option4" name="option4" value="egypt" />
+            <label for="option4"> Egypt</label><br />
+          </div>
+        </div>
+
+        <div class="filterBlock">
+          <div class="filterHeading">
+            <p>Filter by vacation type</p>
+            <a class="accordion-link" href="#special-offer1">
+              <p class="minus" onclick="collapse(1)">🔼</p>
+              <p class="plus" onclick="extend(1)">🔽</p>
+            </a>
+          </div>
+          <!-- Second section starts here! -->
+          <div class="contentFilter">
+            <hr />
+            <input type="checkbox" id="option1" name="option1" value="sea" />
+            <label for="option1"> Sea trips 2021(34)</label><br />
+            <input
+              type="checkbox"
+              id="option2"
+              name="option2"
+              value="mountain"
+            />
+            <label for="option2"> Mountain trips(29)</label><br />
+            <input
+              type="checkbox"
+              id="option3"
+              name="option3"
+              value="earlyBookings"
+            />
+            <label for="option3"> Early Bookings(51)</label><br />
+            <input type="checkbox" id="option4" name="option4" value="Other" />
+            <label for="option4"> Other(543)</label><br />
+          </div>
+        </div>
+        <!-- Third section starts here! -->
+        <div class="filterHeading">
+          <p>Meal Included</p>
+          <a class="accordion-link" href="#special-offer1">
+            <p class="minus" onclick="collapse(2)">🔼</p>
+              <p class="plus" onclick="extend(2)">🔽</p>
+          </a>
+        </div>
+
+        <div class="contentFilter">
+          <hr />
+          <input type="checkbox" id="option1" name="option1" value="yes" />
+          <label for="option1"> Yes(84)</label><br />
+          <input type="checkbox" id="option2" name="option2" value="no" />
+          <label for="option2"> No(29)</label><br />
+        </div>
+        <!-- Fourth section starts here! -->
+        <div class="filterBlock">
+          <div class="filterHeading">
+            <p>Filter by departure airport</p>
+            <a class="accordion-link" href="#special-offer1">
+              <p class="minus" onclick="collapse(3)">🔼</p>
+              <p class="plus" onclick="extend(3)">🔽</p>
+            </a>
+          </div>
+          <!-- Second section starts here! -->
+          <div class="contentFilter">
+            <hr />
+            <input type="checkbox" id="option1" name="option1" value="luton" />
+            <label for="option1"> Luton Airport</label><br />
+            <input
+              type="checkbox"
+              id="option2"
+              name="option2"
+              value="heathrow"
+            />
+            <label for="option2"> Heathrow Airport</label><br />
+            <input
+              type="checkbox"
+              id="option3"
+              name="option3"
+              value="bristol"
+            />
+            <label for="option3"> Bristol Airport</label><br />
+            <input
+              type="checkbox"
+              id="option4"
+              name="option4"
+              value="stanstead"
+            />
+            <label for="option4"> Stanstead Airport</label><br />
+            <input
+              type="checkbox"
+              id="option4"
+              name="option4"
+              value="gatwick"
+            />
+            <label for="option4"> Gatwick Airport</label><br />
+          </div>
+        </div>
+        <!-- Fifth section starts here -->
+        <div class="filterBlock">
+          <div class="filterHeading">
+            <p>Filter by transport type</p>
+            <a class="accordion-link" href="#special-offer1">
+              <p class="minus" onclick="collapse(4)">🔼</p>
+              <p class="plus" onclick="extend(4)">🔽</p>
+            </a>
+          </div>
+          <!-- Second section starts here! -->
+          <div class="contentFilter">
+            <hr />
+            <input
+              type="checkbox"
+              id="option1"
+              name="option1"
+              value="aircraft"
+            />
+            <label for="option1"> Aircraft</label><br />
+            <input type="checkbox" id="option2" name="option2" value="car" />
+            <label for="option2"> Car</label><br />
+            <input type="checkbox" id="option3" name="option3" value="train" />
+            <label for="option3"> Train</label><br />
+          </div>
+        </div>
+      </div>
+
+      <!-- Body Slideshow details -->
+      <div class="special-offer2">
+        <div id="navHistory">
+          <a href="index.html">Home</a><span style="font-size: 2rem">>></span
+          ><a href="SpecialOffers.html">SpecialOffers</a>
+        </div>
+        <div class="slide-details-section">
+          <div class="inner-block-slideshow">
+            <h1>Bulgaria,Sunny Beach, Wave Resort</h1>
+            <!-- This is the slideshow -->
+
+            <div class="slideshow-container">
+              <div class="mySlides1">
+                <img src="data/images/bulgaria1.jpg" />
+              </div>
+
+              <div class="mySlides1">
+                <img src="data/images/bulgaria2.jpg" />
+              </div>
+
+              <div class="mySlides1">
+                <img src="data/images/bulgaria3.jpg" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="inner-block-details">
+            <!-- This are the details -->
+            <div class="data-part">
+              <p><span>Country:</span> Bulgaria</p>
+              <p><span>Town:</span> Sunny Beach</p>
+              <p><span>Available from:</span> 29/06/2021</p>
+              <p><span>Meal included:</span> Yes</p>
+              <p><span>Departure from:</span> Stanstead Airport</p>
+              <p><span>Transport type:</span> Aircraft</p>
+            </div>
+          </div>
+          <div class="price-and-button">
+            <span>£ 230</span>
+            <button type="submit"><a href="DetailsPages.html">Details</a></button>
+          </div>
+        </div>
+        <hr style="margin-top: 10px" />
+
+        <!-- Second slide start here -->
+        <div class="slide-details-section">
+          <div class="inner-block-slideshow">
+            <h1>Grece, Santorini, Erosantorini Hotel</h1>
+            <!-- This is the slideshow -->
+
+            <div class="slideshow-container">
+              <div class="mySlides2">
+                <img src="data/images/santorini1.jpg" />
+              </div>
+
+              <div class="mySlides2">
+                <img src="data/images/santorini2.jpg" />
+              </div>
+
+              <div class="mySlides2">
+                <img src="data/images/santorini3.jpg" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="inner-block-details">
+            <!-- This are the details -->
+            <div class="data-part">
+              <p><span>Country:</span> Grece</p>
+              <p><span>Town:</span> Santorini</p>
+              <p><span>Available from:</span> 25/06/2021</p>
+              <p><span>Meal included:</span> Yes</p>
+              <p><span>Departure from:</span> Heathrow Airport</p>
+              <p><span>Transport type:</span> Aircraft</p>
+            </div>
+          </div>
+          <div class="price-and-button">
+            <span>£ 450</span>
+            <button type="submit"><a href="DetailsPages.html">Details</a></button>
+          </div>
+        </div>
+        <hr style="margin-top: 10px" />
+
+        <!-- Third slide start here -->
+        <div class="slide-details-section">
+          <div class="inner-block-slideshow">
+            <h1>Turkey, Antalya, Side Premium Hotel</h1>
+            <!-- This is the slideshow -->
+
+            <div class="slideshow-container">
+              <div class="mySlides3">
+                <img src="data/images/antalya1.jpg" />
+              </div>
+
+              <div class="mySlides3">
+                <img src="data/images/antalya2.jpg" />
+              </div>
+
+              <div class="mySlides3">
+                <img src="data/images/antalya3.jpg" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="inner-block-details">
+            <!-- This are the details -->
+            <div class="data-part">
+              <p><span>Country:</span> Turkey</p>
+              <p><span>Town:</span> Antalya</p>
+              <p><span>Available from:</span> 29/06/2021</p>
+              <p><span>Meal included:</span> Yes</p>
+              <p><span>Departure from:</span> St Pancras Railway</p>
+              <p><span>Transport type:</span> Train</p>
+            </div>
+          </div>
+          <div class="price-and-button">
+            <span>£ 280</span>
+            <button type="submit"><a href="DetailsPages.html">Details</a></button>
+          </div>
+        </div>
+        <hr style="margin-top: 10px" />
+
+        <!-- Fourth slide starts here -->
+        <div class="slide-details-section">
+          <div class="inner-block-slideshow">
+            <h1>Egypt, Cairo, Marriott Mena House</h1>
+            <!-- This is the slideshow -->
+
+            <div class="slideshow-container">
+              <div class="mySlides4">
+                <img src="data/images/cairo1.jpg" />
+              </div>
+
+              <div class="mySlides4">
+                <img src="data/images/cairo2.jpg" />
+              </div>
+
+              <div class="mySlides4">
+                <img src="data/images/cairo3.jpg" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="inner-block-details">
+            <!-- This are the details -->
+            <div class="data-part">
+              <p><span>Country:</span> Egypt</p>
+              <p><span>Town:</span> Cairo</p>
+              <p><span>Available from:</span> 29/06/2021</p>
+              <p><span>Meal included:</span> Yes</p>
+              <p><span>Departure from:</span> Luton Airport</p>
+              <p><span>Transport type:</span> Aircraft</p>
+            </div>
+          </div>
+          <div class="price-and-button">
+            <span>£ 330</span>
+            <button type="submit"><a href="DetailsPages.html">Details</a></button>
+          </div>
+        </div>
+        <hr style="margin-top: 10px" />
+      </div>
+    </div>
+    <footer class="footerSection">
+      <div class="innerSection">
+        <ul class="sec1">
+          <li><a href="404Page.html">VAAZ Travel</a></li>
+          <br />
+          <li><a href="404Page.html">About</a></li>
+          <li><a href="404Page.html">Club Card</a></li>
+          <li><a href="404Page.html">Partners</a></li>
+          <li><a href="404Page.html">Agency location</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Local Toursim</a></li>
+          <br />
+          <li><a href="404Page.html">Hotels</a></li>
+          <li><a href="404Page.html">Trips</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Corporate Service</a></li>
+          <br />
+          <li><a href="404Page.html">Services</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Toursim</a></li>
+          <br />
+          <li><a href="404Page.html">Beach Trips2021</a></li>
+          <li><a href="404Page.html">Mountain Trips 2021</a></li>
+          <li><a href="404Page.html">Romantic</a></li>
+          <li><a href="404Page.html">Weekend</a></li>
+          <li><a href="404Page.html">Honeymoon</a></li>
+          <li><a href="404Page.html">Wellbeing</a></li>
+        </ul>
+
+        <div class="logodiv">
+          <!-- logo -->
+          <img src="data/images/LOGO1.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+        <!-- Sign In PopUp form from here -->
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="tittle">Sign In</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          
+          <div class="modal-body">
+            <p>Welcome on board dear friend, in order to get the full functionallity of the webesite please log in or register...</p>
+            <div class="modal-body-content">
+    
+              <div class="popup-firstsection">
+                <p>Log In</p>
+                <form  name="myform" id="form-id" class="logIn" action="#">
+              
+                  <input id="username" type="text" placeholder="Username" required><br>
+                  <input id="password" type="password" placeholder="Password" required><br>
+                  <div class="forgot-and-signUp"><a href="404Page.html">Forgot Password</a><span style="color: blue;">/ </span><a href="SignUpForm.html">Sign Up</a><br></div>
+                  <button type="submit" form="logInform" onclick="validate()">Submit</button>
+                </form>
+      
+              </div>
+      
+              <div class="popup-secondsection">
+                <p>Sign In with:</p>
+                <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/facebook.png" alt="facebook link">Facebook</div></a>
+                <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/google.png" alt="google link">Google</div></a>
+                <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/linkedin.png" alt="LinkedIn link">LinkedIn</div></a>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <div  id="overlay"></div>
+    <script src="loginvalidation.js"></script>
+        <script src="scriptPop.js" ></script>
+    <script src="specialoffers.js" type="text/javascript"></script>
+    <script src="filtercollapse.js" type="text/javascript"></script>
+  </body>
+</html>

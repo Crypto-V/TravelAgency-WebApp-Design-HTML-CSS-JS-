@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="popupStyle.css">
+    <title>404Page</title>
+  </head>
+
+  <body>
+    <div class="tBanner">
+      <img id="tLogo" src="data\images\logo.png" alt="logo" />
+      <p id="tSlogan">adventure starts here...</p>
+
+      <div class="searchbar">
+        <input id="placeholder" placeholder="-Destinations-" />
+        <button type="submit" class="search"><a href="">Search</a></button>
+      </div>
+
+      <div class="contacts">
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534642921</p>
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534645121</p>
+        <img id="flag" src="data\images\ukFlag.png" alt="britishFlag" />
+        <a href="">Register</a>
+        <span class="spanTop">/</span>
+        <a style="cursor: pointer;text-decoration: underline;" data-modal-target="#modal">Sign In</a>
+      </div>
+    </div>
+
+    <nav id="navigate">
+      <ul class="uList">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="SpecialOffers.html">Special Offers</a></li>
+        <li><a class="active" href="#404Page.html">Hotel Rooms</a></li>
+        <li><a class="active" href="#404Page.html">Transfer</a></li>
+        <li><a class="active" href="#404Page.html">Fly Tickets</a></li>
+        <li><a class="active" href="#404Page.html">Cruises</a></li>
+        <li><a class="active" href="#404Page.html">Local Trips</a></li>
+        <a href="#404Page"
+          ><img id="navigation" src="data/images/location.png" alt="gps"
+        /></a>
+      </ul>
+    </nav>
+
+    <div class="a404BodyPart">
+      <div class="a404BodyPart_content">
+        <p>
+          This website was build for learning purpouse and it doesn't include
+          all pages. Please click on <strong>Home</strong> button or
+          <strong>Special Offers</strong> button on the main menu.
+        </p>
+        <img
+          src="data/images/404picture.jpg"
+          alt="page was not found picture"
+        />
+      </div>
+    </div>
+
+    <footer class="footerSection">
+      <div class="innerSection">
+        <ul class="sec1">
+          <li><a href="">VAAZ Travel</a></li>
+          <br />
+          <li><a href="">About</a></li>
+          <li><a href="">Club Card</a></li>
+          <li><a href="">Partners</a></li>
+          <li><a href="">Agency location</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Local Toursim</a></li>
+          <br />
+          <li><a href="">Hotels</a></li>
+          <li><a href="">Trips</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Corporate Service</a></li>
+          <br />
+          <li><a href="">Services</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Toursim</a></li>
+          <br />
+          <li><a href="">Beach Trips2021</a></li>
+          <li><a href="">Mountain Trips 2021</a></li>
+          <li><a href="">Romantic</a></li>
+          <li><a href="">Weekend</a></li>
+          <li><a href="">Honeymoon</a></li>
+          <li><a href="">Wellbeing</a></li>
+        </ul>
+
+        <div class="logodiv">
+          <!-- logo -->
+          <img src="data/images/LOGO1.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sign In PopUp form from here -->
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="tittle">Sign In</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p>Welcome on board dear friend, in order to get the full functionallity of the webesite please log in or register...</p>
+        <div class="modal-body-content">
+
+          <div class="popup-firstsection">
+            <p>Log In</p>
+            <form  name="myform" id="form-id" class="logIn" action="#">
+              
+              <input id="username" type="text" placeholder="Username" required><br>
+              <input id="password" type="password" placeholder="Password" required><br>
+              <div class="forgot-and-signUp"><a href="404Page.html">Forgot Password</a><span style="color: blue;">/ </span><a href="SignUpForm.html">Sign Up</a><br></div>
+              <button type="submit" form="logInform" onclick="validate()">Submit</button>
+            </form>
+  
+          </div>
+  
+          <div class="popup-secondsection">
+            <p>Sign In with:</p>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/facebook.png" alt="facebook link">Facebook</div></a>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/google.png" alt="google link">Google</div></a>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/linkedin.png" alt="LinkedIn link">LinkedIn</div></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div  id="overlay"></div>
+    <script src="scriptPop.js" ></script>
+    <script src="loginvalidation.js" ></script>
+  </body>
+</html>

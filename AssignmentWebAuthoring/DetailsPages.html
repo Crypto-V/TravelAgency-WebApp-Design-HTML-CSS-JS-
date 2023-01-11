@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="popupStyle.css">
+    <title>Details Page</title>
+  </head>
+
+  <body>
+    <div class="tBanner">
+      <img id="tLogo" src="data\images\logo.png" alt="logo" />
+      <p id="tSlogan">adventure starts here...</p>
+
+      <div class="searchbar">
+        <input id="placeholder" placeholder="-Destinations-" />
+        <button type="submit" class="search"><a href="404Page.html">Search</a></button>
+      </div>
+
+      <div class="contacts">
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534642921</p>
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534645121</p>
+        <img id="flag" src="data\images\ukFlag.png" alt="britishFlag" />
+        <a href="SignUpForm.html">Register</a>
+        <span class="spanTop">/</span>
+        <a style="cursor: pointer;text-decoration: underline;" data-modal-target="#modal">Sign In</a>
+      </div>
+    </div>
+
+    <nav id="navigate">
+      <ul class="uList">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="SpecialOffers.html">Special Offers</a></li>
+        <li><a class="active" href="404Page.html">Hotel Rooms</a></li>
+        <li><a class="active" href="404Page.html">Transfer</a></li>
+        <li><a class="active" href="404Page.html">Fly Tickets</a></li>
+        <li><a class="active" href="404Page.html">Cruises</a></li>
+        <li><a class="active" href="404Page.html">Local Trips</a></li>
+        <a href="#404Page"
+          ><img id="navigation" src="data/images/location.png" alt="gps"
+        /></a>
+      </ul>
+    </nav>
+
+    <div class="details-main-body">
+      <div id="navHistory">
+        <a href="index.html">Home</a><span style="font-size: 2rem">>></span
+        ><a href="SpecialOffers.html">SpecialOffers</a
+        ><span style="font-size: 2rem">>></span
+        ><a href="DetailsPages.html">DetailsPage</a>
+      </div>
+
+      <div class="details-inner-main-body">
+        <h1>Bulgaria,Sunny Beach, Wave Resort</h1>
+        <div class="inner-main-section1">
+          <div class="section1-data-part">
+            <p><span>Country:</span> Bulgaria</p>
+            <p><span>Town:</span> Sunny Beach</p>
+            <p><span>Available from:</span> 29/06/2021</p>
+            <p><span>Meal included:</span> Yes</p>
+            <p><span>Departure from:</span> Stanstead Airport</p>
+            <p><span>Transport type:</span> Aircraft</p>
+          </div>
+
+          <div class="inner-main-slideshowpart">
+            <div class="slideshow-container-details">
+              <div class="mySlides1">
+                <img src="data/images/bulgaria1.jpg" />
+              </div>
+
+              <div class="mySlides1">
+                <img src="data/images/bulgaria2.jpg" />
+              </div>
+
+              <div class="mySlides1">
+                <img src="data/images/bulgaria3.jpg" />
+              </div>
+
+              <a class="prev top" onclick="plusSlides(-1, 0)">&#10094;</a>
+              <a class="next nexti top" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
+          </div>
+
+          <div class="stars">
+            <p>Stars</p>
+            <span
+              ><img src="data/images/star.png" alt="" /><img
+                src="data/images/star.png"
+                alt="" /><img src="data/images/star.png" alt=""
+            /></span>
+          </div>
+        </div>
+
+        <!-- From here section 2 starts -->
+        <h1 style="margin-top: 5px;">Additional Facilities</h1>
+        <div class="section2-picture-galery">
+          <div class="picture-individual-container">
+            <a href="404Page.html">
+              <img src="data/images/swimmingpool.jpg" alt="swimming pool"/>
+            </a>
+            <div class="picture-individual-container-overlay">Swimming Pool</div>
+
+          </div>
+
+          <div class="picture-individual-container">
+            <a href="404Page.html">
+              <img src="data/images/indoorspa.jpg" alt="indoor spa"/>
+            </a>
+            <div class="picture-individual-container-overlay">Indoor Spa</div>
+          </div>
+
+          <div class="picture-individual-container">
+            <a href="404Page.html">
+              <img src="data/images/gym.jpg" alt="indoor gym, 2 girls yoga"/>
+            </a>
+            <div class="picture-individual-container-overlay">Indoor Gym</div>
+          </div>
+
+          <div class="picture-individual-container">
+            <a href="404Page.html">
+              <img src="data/images/playroom.jpg" alt="kids playroom"/>
+            </a>
+            <div class="picture-individual-container-overlay">Kids Playroom</div>
+          </div>
+
+          <div class="picture-individual-container">
+            <a href="404Page.html"><img src="data/images/indoorbasketball.jpg" alt="basketball field"/>
+            </a>
+            <div class="picture-individual-container-overlay">Basketball Field</div>
+          </div>
+        </div>
+
+        <!-- From here bottom section starts with price and button -->
+        <div class="section3-price">
+
+          <div class="price-package">
+            <p>230</p>
+            <span>£</span>
+            <p>/</p>
+            <div class="old-price">was <span>430</span></div>
+          </div>
+
+          <a href="PayPage.html"><button class="button-package" type="submit"> Select</button></a>
+
+        </div>
+      </div>
+
+      <div class="top-suggestions-bottom">
+        <p id="topPar">Top Suggestions</p>
+
+        <div class="top-suggestion-container">
+
+          <div class="top-suggestion-picture">
+            <img src="data/images/santorini3.jpg" alt="picture of santorini">
+          </div>
+
+          <div class="top-suggestion-price tsp">
+            <div class="price-package pp">
+              <p style="color: #5f5f5f;">Grece</p>
+              <p>430</p>
+              <span>£</span>
+              <p>/</p>
+              <div class="old-price op">was <span>630</span></div>
+            </div>
+            <a href="404Page.html"><button class=" btp" type="submit"> Select</button></a>
+          </div>
+
+        </div>
+
+        <div class="top-suggestion-container">
+
+          <div class="top-suggestion-picture">
+            <img src="data/images/spain.jpg" alt="picture of santorini">
+          </div>
+
+          <div class="top-suggestion-price tsp">
+            <div class="price-package pp">
+              <p style="color: #5f5f5f;">Spain</p>
+              <p>130</p>
+              <span>£</span>
+              <p>/</p>
+              <div class="old-price op">was <span>250</span></div>
+            </div>
+            <a href="404Page.html"><button class=" btp" type="submit"> Select</button></a>
+          </div>
+
+        </div>
+
+        <div class="top-suggestion-container">
+
+          <div class="top-suggestion-picture">
+            <img src="data/images/italy.jpg" alt="picture of santorini">
+          </div>
+
+          <div class="top-suggestion-price tsp">
+            <div class="price-package pp">
+              <p style="color: #5f5f5f;">Italy</p>
+              <p>80</p>
+              <span>£</span>
+              <p>/</p>
+              <div class="old-price op">was <span>250</span></div>
+            </div>
+            <a href="404Page.html"><button class=" btp" type="submit"> Select</button></a>
+          </div>
+
+        </div>
+
+        <div class="top-suggestion-container">
+
+          <div class="top-suggestion-picture">
+            <img src="data/images/mexico.jpg" alt="picture of santorini">
+          </div>
+
+          <div class="top-suggestion-price tsp">
+            <div class="price-package pp">
+              <p style="color: #5f5f5f;">Mexico</p>
+              <p>600</p>
+              <span>£</span>
+              <p>/</p>
+              <div class="old-price op">was <span>800</span></div>
+            </div>
+            <a href="404Page.html"><button class=" btp" type="submit"> Select</button></a>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+
+    <footer class="footerSection">
+      <div class="innerSection">
+        <ul class="sec1">
+          <li><a href="404Page.html">VAAZ Travel</a></li>
+          <br />
+          <li><a href="404Page.html">About</a></li>
+          <li><a href="404Page.html">Club Card</a></li>
+          <li><a href="404Page.html">Partners</a></li>
+          <li><a href="404Page.html">Agency location</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Local Toursim</a></li>
+          <br />
+          <li><a href="404Page.html">Hotels</a></li>
+          <li><a href="404Page.html">Trips</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Corporate Service</a></li>
+          <br />
+          <li><a href="404Page.html">Services</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="404Page.html">Toursim</a></li>
+          <br />
+          <li><a href="404Page.html">Beach Trips2021</a></li>
+          <li><a href="404Page.html">Mountain Trips 2021</a></li>
+          <li><a href="404Page.html">Romantic</a></li>
+          <li><a href="404Page.html">Weekend</a></li>
+          <li><a href="404Page.html">Honeymoon</a></li>
+          <li><a href="404Page.html">Wellbeing</a></li>
+        </ul>
+
+        <div class="logodiv">
+          <!-- logo -->
+          <img src="data/images/LOGO1.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sign In PopUp form from here -->
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="tittle">Sign In</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      
+      <div class="modal-body">
+        <p>Welcome on board dear friend, in order to get the full functionallity of the webesite please log in or register...</p>
+        <div class="modal-body-content">
+
+          <div class="popup-firstsection">
+            <p>Log In</p>
+            <form  name="myform" id="form-id" class="logIn" action="#">
+              
+              <input id="username" type="text" placeholder="Username" required><br>
+              <input id="password" type="password" placeholder="Password" required><br>
+              <div class="forgot-and-signUp"><a href="404Page.html">Forgot Password</a><span style="color: blue;">/ </span><a href="SignUpForm.html">Sign Up</a><br></div>
+              <button type="submit" form="logInform" onclick="validate()">Submit</button>
+            </form>
+  
+          </div>
+  
+          <div class="popup-secondsection">
+            <p>Sign In with:</p>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/facebook.png" alt="facebook link">Facebook</div></a>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/google.png" alt="google link">Google</div></a>
+            <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/linkedin.png" alt="LinkedIn link">LinkedIn</div></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div  id="overlay"></div>
+
+    <script src="scriptPop.js" ></script>
+    <script src="loginvalidation.js"></script>
+
+    <script src="specialoffers.js" type="text/javascript"></script>
+  </body>
+</html>

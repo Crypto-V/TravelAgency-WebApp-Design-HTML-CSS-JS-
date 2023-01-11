@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="popupStyle.css">
+    <title>404Page</title>
+  </head>
+
+  <body>
+    <div class="tBanner">
+      <img id="tLogo" src="data\images\logo.png" alt="logo" />
+      <p id="tSlogan">adventure starts here...</p>
+
+      <div class="searchbar">
+        <input id="placeholder" placeholder="-Destinations-" />
+        <button type="submit" class="search"><a href="">Search</a></button>
+      </div>
+
+      <div class="contacts">
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534642921</p>
+        <img src="data\images\logoPhone.png" alt="logoPhone" />
+        <p>+447534645121</p>
+        <img id="flag" src="data\images\ukFlag.png" alt="britishFlag" />
+        <a href="SignUpForm.html">Register</a>
+        <span class="spanTop">/</span>
+        <a style="cursor: pointer;text-decoration: underline;" data-modal-target="#modal">Sign In</a>
+      </div>
+    </div>
+
+    <nav id="navigate">
+      <ul class="uList">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a class="active" href="SpecialOffers.html">Special Offers</a></li>
+        <li><a class="active" href="#404Page.html">Hotel Rooms</a></li>
+        <li><a class="active" href="#404Page.html">Transfer</a></li>
+        <li><a class="active" href="#404Page.html">Fly Tickets</a></li>
+        <li><a class="active" href="#404Page.html">Cruises</a></li>
+        <li><a class="active" href="#404Page.html">Local Trips</a></li>
+        <a href="#404Page"
+          ><img id="navigation" src="data/images/location.png" alt="gps"
+        /></a>
+      </ul>
+    </nav>
+
+    
+
+    <div class="navHistory-detailsPage-body">
+        <div id="navHistory-detailsPage">
+            <a href="index.html">Home</a><span style="font-size: 2rem">>></span
+            ><a href="SpecialOffers.html">SpecialOffers</a><span style="font-size: 2rem">>></span
+                ><a href="DetailsPages.html">Details</a><span style="font-size: 2rem">>></span
+                    ><a href="PayPage.html">Checkout</a>
+        </div>
+
+        <div class="navHistory-detailsPage-slideBlock">
+            <div class="inner-main-section1">
+                <div class="section1-data-part sdp">
+                  <p><span>Country:</span> Bulgaria</p>
+                  <p><span>Town:</span> Sunny Beach</p>
+                  <p><span>Available from:</span> 29/06/2021</p>
+                  <p><span>Meal included:</span> Yes</p>
+                  <p><span>Departure from:</span> Stanstead Airport</p>
+                  <p><span>Transport type:</span> Aircraft</p>
+                </div>
+      
+                <div class="inner-main-slideshowpart">
+                  <div class="slideshow-container-details detailsPage-slide">
+                    <div class="mySlides1">
+                      <img src="data/images/bulgaria1.jpg" />
+                    </div>
+      
+                    <div class="mySlides1">
+                      <img src="data/images/bulgaria2.jpg" />
+                    </div>
+      
+                    <div class="mySlides1">
+                      <img src="data/images/bulgaria3.jpg" />
+                    </div>
+      
+                    <a class="prev top" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next nexti top" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+                </div>
+      
+                <div class="stars">
+                  <p>Stars</p>
+                  <span
+                    ><img src="data/images/star.png" alt="" /><img
+                      src="data/images/star.png"
+                      alt="" /><img src="data/images/star.png" alt=""
+                  /></span>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="payInformation-block">
+
+            <div class="customer-information-block">
+                <form action="index.html">
+                    <h1>Customer Information</h1>
+                    <div class="form-labels-payPage">
+                        <input type="text" placeholder="First Name" name="fname" id="fname"  required><br>
+                        <input type="text" placeholder="Last Name" name="lname" id="lname"  required><br>
+    
+                        <label for="birth-date">Date of Birth</label><br>
+                        <input type="date"  name="birth-date" id="birt-date" required><br>
+    
+                        <label for="checkin-date">CheckIn-Date</label><br>
+                        <input type="date"  name="checkin-date" id="checkin-date" required><br>
+
+                        <label for="checkout-date">CheckOut-Date</label><br>
+                        <input type="date"  name="checkout-date" id="checkout-date" required><br>
+
+                        <input type="number" min="1" max="10" placeholder="Adults" name="adults" id="adults" required><br>
+
+                        <input type="number" min="1" max="10" placeholder="Childrens" name="childrens" id="childrens"  required><br>
+                    </div>
+                </form>
+            </div>
+
+            <div class="payInformation-block-details">
+                <h1>Payment Information</h1>
+                <div class="pay-methods-detailsPage">
+                    <a href="404Page.html"><img src="data/images/paypal.png" alt="paypal payment"></a>
+                    <a href="404Page.html"><img src="data/images/bitcoin.png" alt="bitcoin payment"></a>
+                    <a href="404Page.html"><img src="data/images/bank.png" alt="bank payment"></a>
+                </div>
+                
+                <div class="radio-container">
+                    <input name="choice" type="radio"><img class="card-payment" src="data/images/visa.png" alt="visa payment">
+                    <input name="choice" type="radio"><img class="card-payment" src="data/images/mastercard.png" alt="visa payment">
+                </div>
+
+                <div class="get-payment-info-block">
+                    <form id="checkout-form" action="index.html">
+                        <label for="bname">Bank/Authority name:</label><br>
+                        <input type="text" placeholder="Bank Name" name="bname" id="bname" minlength="8" maxlength="30" required><br>
+    
+                        <label for="holder-name">Enter cardholder name:</label><br>
+                        <input type="text" placeholder="Cardholder name" name="holder-name" id="holder-name"  maxlength="30" required><br>
+    
+                        <label for="expiration-month">Expiration Month/Year:</label><br>
+                        <input type="month"  name="expiration-month" id="expiration-month" min="2021-09" required><br>
+    
+                        <label for="digit-16">Enter your 16 digit card number:</label><br>
+                        <input type="text" placeholder="16 digit number" name="digit-16" id="digit-16" minlength="16" maxlength="16" required><br>
+    
+                        <label for="cvv">Enter your cvv number:</label><br>
+                        <input type="text" placeholder="CVV" name="cvv" id="cvv"  minlength="3" maxlength="3" required><br>
+
+                    </form>
+                </div>
+
+                   
+            </div>
+        </div>
+        <div class="section3-price section3-checkout">
+
+            <div class="price-package">
+              <p>230</p>
+              <span>£</span>
+              <p>/</p>
+              <div class="old-price">was <span>430</span></div>
+            </div>
+  
+            <a href=""><button form="checkout-form" class="button-package button-package-checkout" type="submit"> Check Out</button></a>
+  
+          </div>
+
+
+
+    </div>
+
+
+    <footer class="footerSection">
+      <div class="innerSection">
+        <ul class="sec1">
+          <li><a href="">VAAZ Travel</a></li>
+          <br />
+          <li><a href="">About</a></li>
+          <li><a href="">Club Card</a></li>
+          <li><a href="">Partners</a></li>
+          <li><a href="">Agency location</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Local Toursim</a></li>
+          <br />
+          <li><a href="">Hotels</a></li>
+          <li><a href="">Trips</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Corporate Service</a></li>
+          <br />
+          <li><a href="">Services</a></li>
+        </ul>
+
+        <ul class="sec1">
+          <li><a href="">Toursim</a></li>
+          <br />
+          <li><a href="">Beach Trips2021</a></li>
+          <li><a href="">Mountain Trips 2021</a></li>
+          <li><a href="">Romantic</a></li>
+          <li><a href="">Weekend</a></li>
+          <li><a href="">Honeymoon</a></li>
+          <li><a href="">Wellbeing</a></li>
+        </ul>
+
+        <div class="logodiv">
+          <!-- logo -->
+          <img src="data/images/LOGO1.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+       <!-- Sign In PopUp form from here -->
+       <div class="modal" id="modal">
+        <div class="modal-header">
+          <div class="tittle">Sign In</div>
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <p>Welcome on board dear friend, in order to get the full functionallity of the webesite please log in or register...</p>
+          <div class="modal-body-content">
+  
+            <div class="popup-firstsection">
+              <p>Log In</p>
+              <form  name="myform" id="form-id" class="logIn" action="#">
+              
+                <input id="username" type="text" placeholder="Username" required><br>
+                <input id="password" type="password" placeholder="Password" required><br>
+                <div class="forgot-and-signUp"><a href="404Page.html">Forgot Password</a><span style="color: blue;">/ </span><a href="SignUpForm.html">Sign Up</a><br></div>
+                <button type="submit" form="logInform" onclick="validate()">Submit</button>
+              </form>
+    
+            </div>
+    
+            <div class="popup-secondsection">
+              <p>Sign In with:</p>
+              <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/facebook.png" alt="facebook link">Facebook</div></a>
+              <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/google.png" alt="google link">Google</div></a>
+              <a href="404Page.html"><div class="popup-image-signin"><img src="data/images/linkedin.png" alt="LinkedIn link">LinkedIn</div></a>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+      <div  id="overlay"></div>
+        <script src="loginvalidation.js"></script>
+      <script src="scriptPop.js" ></script>
+    <script src="specialoffers.js" type="text/javascript"></script>
+  </body>
+</html>

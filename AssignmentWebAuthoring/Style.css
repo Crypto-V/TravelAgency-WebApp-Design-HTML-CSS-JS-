@@ -1,0 +1,1159 @@
+*,
+*::before,
+*::after
+ { 
+  margin: 0 ;
+  padding: 0;
+  font-family:'Roboto',sans-serif ;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.tBanner {
+  position: relative;
+  display: flex;
+  width: 130rem;
+  height: 15rem;
+  margin: auto;
+}
+#tLogo {
+  width: 15rem;
+  height: 14rem;
+  padding: 0.6rem;
+}
+#tSlogan {
+  position: absolute;
+  padding-left: 13rem;
+  padding-top: 3px;
+  text-align: left;
+  font-style: normal;
+  font-size: 2rem;
+  font-family: "Segoe Script";
+}
+
+.searchbar {
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+#placeholder {
+  border: 1px solid #707070;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  width: 80rem;
+  font-size: 1.6rem;
+  padding: 5px;
+}
+
+.search{
+  border: 1px solid #707070;
+  width: 8rem;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+
+.contacts {
+  position: absolute;
+  display: flex;
+  right: 8rem;
+  padding-top: 0.2rem;
+}
+.contacts img {
+  width: 2.7rem;
+  height: 4rem;
+  padding-right: 0.4rem;
+}
+
+.contacts p,
+a,.spanTop{
+  padding-right: 0.5rem;
+  padding-top: 0.9rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2f5ef5;
+}
+
+.contacts p {
+  padding-right: 3rem;
+  color: #2f5ef5;
+}
+#flag {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding-right: 1rem;
+  margin-left: 1rem;
+}
+
+#flag:hover{
+  cursor: pointer;
+}
+
+.search{
+  color: #2f5ef5;
+  font-size: 2rem;
+  padding:.3rem;
+}
+.search a{
+  text-decoration: none;
+}
+
+.search:hover{
+  background-color: #dce1f1;
+}
+
+
+#navigate{
+  background-color: #487AC5;
+}
+
+.uList {
+  list-style-type: none; /*remove the dots from the ul */
+  overflow:auto;
+  width: 135rem;
+  margin:  auto;
+  
+}
+
+.uList li {
+  
+  float:left;
+}
+
+.uList li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: normal ;
+  font-family:'Segoe UI';
+  padding: 1rem 3rem;
+  text-decoration: none; /*remove the underline from the links */
+}
+
+.active:hover {
+  background-color: white;
+  color:#487AC5;
+}
+
+#navigation{
+    width: 4rem;
+    padding-top: .5rem;
+}
+
+#navigation:hover{
+    width:4.5rem;
+}
+
+
+.main{
+  margin: auto;
+  width: 135rem;
+  height: 110rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  
+}
+
+.main h1{
+  color: #487AC5;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 1.5rem;
+}
+
+.container{ 
+  
+  display: flex; 
+  justify-content: center;
+  
+}
+
+.container1{
+  position: relative; 
+}
+
+.container1 img{
+  width: 40rem;
+  margin-right:5rem;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  padding: .5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container1 img:hover{
+  box-shadow:   .5rem .5rem 1rem rgba(25, 139, 192, 0.5);
+}
+
+.overlay{
+  position: absolute;
+  top: 4.5rem;
+  left: 0.5rem;
+  background-color:#f6f6f6;
+  overflow: hidden;
+  border-radius: 0 .9rem .9rem 0 ;
+  text-align: center;
+  /*Inititally the width of overlay will be 0 */
+  width: 0; 
+  height: 3.5rem;
+  transition: .5s ease;
+  opacity: 0.7;
+} 
+
+.text{
+  color: rgb(51, 7, 250);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.container1:hover .overlay{
+  width: 20rem;
+  
+}
+
+.aBanner{
+  position: relative;
+}
+
+#ban {
+  margin-top: 2.5rem;
+  width: 131rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ban:hover{
+  box-shadow:    .5rem .5rem 1 rgba(25, 139, 192, 0.5);
+}
+
+#airplane {
+  position: absolute;
+  left: -1rem;
+  bottom: -2.5rem;
+  width: 25rem;
+}
+
+.popular{
+  display: flex;
+}
+
+.picPopular{
+  position: relative;
+  margin:0 0 auto;
+padding-right: 3rem;
+}
+
+.picPopular img{
+  height: 20rem;
+  margin-right:.5rem;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 1rem;
+  padding: .7rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picOverlay{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position:absolute;
+  left:.7rem;
+  top: 1.5rem;
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5rem;
+  background-color: rgb(218, 218, 218);
+  opacity: 0.7;
+  color: rgb(51, 7, 250);
+}
+
+.details{
+  display: flex;
+  position:absolute;
+  background-color: #464545;
+  left: 6px;
+  bottom: 10px;
+  height: 50px;
+  width:27.8rem;
+  opacity: 0.9;
+
+}
+
+/* Grece balance label */
+.small{
+  width: 24.7rem;
+}
+
+/* Egypt picture label balance */
+.mid{
+  width: 27.8rem;
+}
+#h3Inside{
+  position: relative;
+  padding: 4px;
+  width: 5rem;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.popularPrice h3{
+  color: white;
+  font-size: 1.9rem;
+}
+
+.details h4{
+  position:absolute;
+  right:3px;
+  top: 0;
+  color: gold;
+}
+
+.section2{
+position:absolute;
+right: 1rem;
+top: 1rem;
+}
+
+#detailsButton{
+  color: white;
+  font-weight: bold;
+  background-color: #2f5ef5;
+  border-radius: .7rem;
+  font-size: 1.4rem;
+  padding: .5rem;
+}
+#detailsButton:hover{
+  cursor: pointer;
+  background-color: #36dd52;
+}
+
+.workInfo{
+  width: 131rem;
+  margin-top: 3rem;
+  border: 1px solid #707070;
+  background-color: #F6F6F6;
+  font-size: 3.5rem;
+  font-weight: normal ;
+  font-family:'Segoe UI';
+  text-align:justify;
+  
+}
+
+.workInfo p{
+  padding: 1rem;
+}
+
+.footerSection{
+  margin-top: 2rem;
+  background-color: #858585;
+  justify-content:center;
+  
+  
+}
+.innerSection{
+  position: relative;
+  display: flex;
+  overflow:auto;
+  width: 135rem;
+  margin:  auto;
+  overflow: hidden;
+  
+}
+
+.sec1{
+  margin:1rem 5rem 0 .5rem;
+  list-style-type:none;
+}
+
+.sec1 a{
+  
+  text-decoration: none;
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.sec1 a:hover{
+  color: #6836dd;
+  text-decoration: underline;
+}
+
+.sec1 li{
+  padding: .5rem;
+}
+
+.logodiv img{
+  position: absolute;
+  left: 100rem;
+  width: 30rem;
+  padding: .5rem;
+  
+  
+}
+
+.special-offers-main{
+  display: flex;
+  margin: auto;
+  width: 136rem;
+}
+
+.special-offer1{
+  
+  display: flex;
+  flex-direction: column;
+  margin: .5rem;
+  width: 40rem;
+  height: 100rem;
+}
+
+.special-offer2{
+  margin: 1.5rem;
+  height: 120rem;
+}
+
+.filterHeading{
+  color: #2f5ef5;
+  font-weight: 900;
+  margin-bottom: 5px;
+  height: 5rem;
+  border: 3px solid rgb(207, 207, 207);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(223, 223, 223);
+  
+}
+.filterHeading p{
+  padding-top: .8rem;
+  font-size: 2rem;
+}
+
+.filterHeading a{
+  text-decoration: none;
+}
+
+.filterBlock{
+  background-color: rgb(237, 247, 250);
+}
+
+.contentFilter {
+  background-color: rgb(237, 247, 250);
+  font-size: 3rem;
+  padding-top: 1px;
+  overflow: hidden;
+  position: relative; 
+  transition: cubic-bezier(1, 0, 0, 1);
+}
+
+.contentFilter input{
+  width: 2rem;
+  height: 2rem;
+}
+
+.plus{
+  display: none;
+}
+
+.search{
+  border: 1px solid #707070;
+  width: 12rem;
+  border-radius: 9px;
+  background-color: #ffffff;
+}
+.special-offer2{
+  height: 150rem;
+  display: flex;
+  flex-direction: column
+}
+
+
+#navHistory a{
+  text-decoration: none;
+  font-size: 2.1rem;
+  padding: 9px;
+}
+
+#navHistory a:hover{
+  text-decoration: underline;
+}
+.slide-details-section{
+  height: auto;
+  display: flex;
+}
+
+.inner-block-slideshow{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.inner-block-slideshow h1{
+  margin-top: 1.5rem;
+  font-weight: 550;
+  font-size: 2.2rem;
+}
+
+.data-part{
+  width: 40rem;
+  padding-top: 4rem;
+}
+
+.data-part span, p{
+  padding-bottom: 1.1rem;
+  font-size: 1.8rem;
+}
+
+.data-part span{
+  font-weight: 600;
+  
+}
+
+.data-part p{
+  text-align:start;
+}
+
+.price-and-button{
+  margin-top: 4rem;
+  /* margin-left: 5rem;
+  padding-left: 15rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Price property */
+.price-and-button span{
+  margin-bottom: 21rem;
+  color: rgb(245, 142, 8);
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+/* button .special-offer2 property */
+.price-and-button button{
+  width: 10rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.price-and-button a{
+  padding:.2rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.price-and-button a:hover{
+  color: rgb(106, 233, 138);
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  margin: .5rem 1.5rem .5rem 0;
+  position: relative;
+  /* margin: 0 auto; */
+  border: 0.5rem solid rgb(235, 235, 235);
+  box-shadow: 0 0 .7rem .2rem rgb(95, 156, 247);
+  
+}
+
+.slideshow-container img{
+  filter: brightness(120%);
+  filter: saturate(160%);
+  width: 40rem;
+  height: 25rem;
+}
+
+/* Hide the images by default */
+.mySlides1 .mySlides2 .mySlides3 .mySlides4{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(136, 136, 136, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.a404BodyPart{
+  width: 130rem;
+  margin: auto;
+}
+
+.a404BodyPart p{
+
+  font-size:3rem;
+  color: rgb(75, 158, 185);
+}
+
+.a404BodyPart strong{
+  font-size: 3rem;
+}
+
+.a404BodyPart_content img{
+  width:30rem;
+  margin-left: 35%;
+  opacity: 0.8;
+  
+}
+
+.details-main-body{
+  width: 130rem;
+  height: 150rem;
+  margin: auto;
+}
+
+.details-inner-main-body{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(124, 124, 124);
+  background-color: #F6F6F6;
+  border-radius: 1.6rem;
+  width: 100%;
+  height: 75%;
+}
+.details-inner-main-body h1{
+  padding: .9rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.inner-main-section1{
+display: flex;
+justify-content: space-between;
+}
+
+.section1-data-part span{
+font-size: 2rem;
+font-weight: bold;
+}
+
+.section1-data-part p{
+  font-size: 2rem;
+  
+  }
+
+.section1-data-part {
+    padding: .9rem;
+    /* border: 1px solid red; */
+    width: 40rem;
+}
+
+.inner-main-slideshowpart{
+position: relative;
+}
+
+.slideshow-container-details img{
+  margin-top: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 0 .7rem .2rem rgb(95, 156, 247);
+  filter: brightness(120%);
+  filter: saturate(160%);
+  width: 50rem;
+  position: relative;
+}
+
+.stars img{
+  width: 40px;
+}
+.stars{
+  margin: 50px;
+  padding-left: 4rem;
+}
+
+.stars p{
+  font-size: 4rem;
+}
+
+.section2-picture-galery{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.picture-individual-container{
+  width: 30rem;
+  margin: 2rem;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 0 0 .7rem .2rem rgb(95, 156, 247);
+  position: relative;
+
+}
+
+.picture-individual-container img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(120%);
+  filter: saturate(160%);
+  
+
+}
+
+.picture-individual-container-overlay{
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(202, 201, 201);
+  position: absolute;
+  bottom: 0;
+  opacity: 0.7;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 550;
+  cursor: pointer;
+
+}
+
+.picture-individual-container img:hover{
+  box-shadow: 0 0 .7rem .2rem rgba(95, 156, 247,0.9);
+}
+
+.section3-price{
+margin-top: 5rem;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+}
+
+.price-package {
+  display: flex;
+  margin: .5rem;
+
+}
+
+.price-package p{
+  font-size: 4rem;
+  color: rgb(255, 153, 0);
+  font-weight: 550;
+  padding:6px;
+}
+
+.price-package span{
+  font-size: 2rem;
+  color: rgb(255, 153, 0);
+
+}
+
+.old-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #464545;
+  
+}
+
+.old-price span{
+  text-decoration: line-through;
+  color: #26272c;
+  font-weight: lighter;
+}
+
+.button-package{
+  margin: 0 3rem 0 1rem;
+  padding:.5rem 2rem .5rem 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #5f5f5f;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-package:hover{
+  color: #08fc31;
+}
+
+.top-suggestions-bottom{
+  border: 1px solid rgb(124, 124, 124);
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 30rem;
+  margin-top: 3rem;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+#topPar{
+  position: absolute;
+  left: 3rem;
+  top: .5rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: rgb(81, 81, 202);
+  
+}
+
+.btp{
+  margin: 0 0 0 1rem;
+  padding:0 .5rem 0 .5rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #5f5f5f;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btp:hover{
+  color: #08fc31;
+}
+
+.top-suggestion-container{
+margin-top: 40px;
+}
+
+.top-suggestion-picture img{
+width: 28rem;
+height: 18rem;
+border-radius: 10px;
+border: 3px solid rgb(155, 155, 155);
+filter: brightness(120%);
+filter: saturate(120%);
+box-shadow: 0 0 .7rem .2rem rgb(95, 156, 247);
+}
+
+.pp p,span{
+  font-size: 2rem;
+}
+
+.op span{
+  font-size: 1.5rem;
+}
+
+.tsp {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.town{
+  color: black;
+}
+
+/* Navigation History block here */
+#navHistory-detailsPage{
+  margin: auto;
+  margin: 1rem;
+}
+
+/* body part of details page */
+
+.navHistory-detailsPage-body{
+  width: 130rem;
+  margin: auto;
+}
+
+/* Block under the navigation history block */
+.navHistory-detailsPage-slideBlock{
+  border: 1px solid rgb(124, 124, 124);
+  background-color: #F6F6F6;
+  height: 36rem;
+  border-radius: 1.6rem;
+}
+
+.sdp span{
+  font-size: 2.4rem;
+}
+
+.sdp p{
+  font-size: 2.4rem;
+}
+
+.payInformation-block{
+  margin-top: 1.5rem;
+  border: 1px solid rgb(124, 124, 124);
+  background-color: #F6F6F6;
+  /* height: 60rem; */
+  border-radius: 1.6rem;
+  width: 100%;
+  border: 1px solid #707070;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.customer-information-block{
+  margin-bottom: 3rem;
+  height: 90%;
+  border-right: 2px solid gray;
+  width: 64.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payInformation-block-details{
+  margin-bottom: 2rem;
+  height: 90%;
+  width: 64.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-information-block h1{
+padding-left: 1rem;
+font-size: 2.3rem;
+font-weight: 500;
+}
+
+.form-labels-payPage{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-labels-payPage input{
+  color: #464545;
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid grey;
+  
+}
+
+.form-labels-payPage label{
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+}
+
+#adults {
+  width: 12rem;
+}
+
+#childrens {
+  width: 12rem;
+}
+
+.pay-methods-detailsPage img{
+  width: 3rem;
+  margin: 1rem;
+}
+
+.payInformation-block-details h1{
+  padding-top: 1rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
+.card-payment{
+  width: 4rem;
+  margin: 0 2rem 1rem 0;
+} 
+
+input[type=radio] {
+  border: 1px;
+  width: 1.6rem;
+  height: 2rem;
+}
+
+input[type=date]{
+  opacity: 0.6;
+  
+}
+
+input[type=month]{
+  opacity: 0.6;
+  
+}
+
+input:placeholder-shown{
+  opacity: 0.6;
+}
+
+.radio-container{
+  border-top: 2px solid rgb(172, 172, 172);
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.get-payment-info-block form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.get-payment-info-block input{
+  color: #464545;
+  width: rem;
+  font-size: 1.7rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 1px solid grey;
+}
+
+.get-payment-info-block label{
+  font-size: 1.8rem;
+}
+
+.section3-checkout{
+  margin-top: 0;
+}
+
+.button-package-checkout{
+background-color: #53DC52;
+font-size: 2.5rem;
+font-weight: 600;
+color: white;
+}
+
+.button-package-checkout:hover{
+  color: blue;
+}
+
+.registration-page-main{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 130rem;
+border: 1px solid rgb(59, 52, 52);
+border-top: none;
+margin: auto;
+background-color: #F6F6F6;
+}
+
+
+.form-inner-container form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inner-container p{
+  margin-top: 3rem;
+  margin-left: 9rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.form-inner-container input{
+  margin-bottom: 1rem;
+  border-radius:1rem ;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 1px solid grey;
+}
+
+.form-inner-container  select{
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius:1rem ;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #fafafa;
+  border: 1px solid grey;
+}
+
+#registration_submit{
+  width: 9rem;
+  border-radius:.6rem ;
+  font-size: 2rem;
+  margin-left: 18rem;
+  margin-bottom: 5rem;
+  color: blue;
+}
+
+#registration_submit:hover{
+background-color: greenyellow;
+cursor: pointer;
+}
+
+.ul-inside-registration li{
+font-size: 2rem;
+text-align: justify;
+}
+
+
+.some-images-registration {
+width: 70rem;
+font-size:2rem ;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 8rem;
+
+}
+
+.logIn input{
+  margin-bottom: 1rem;
+}
+/* Error message printed durring validation */
+.error {
+  color: red;
+  font-size: 1.5rem;
+}
+
+
+.form-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 3rem;
+  margin: 0;
+  padding-top: 1rem;
+  
+}
+
+.row label{
+  padding-left: .5rem;
+  font-size: 2rem;
+}
+
+.row option{
+  font-size: 1.5rem;
+}
